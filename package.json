@@ -1,0 +1,39 @@
+{
+  "name": "velitdignissimos",
+  "version": "1.0.0",
+  "description": "Link your Notr account to your wallet evm",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "tyoe": "module",
+  "scripts": {
+    "build": "tsc",
+    "start-ipfs": "tsc && node dist/run-nostr3IPFS.js",
+    "start": "tsc && node dist/run-nostr3.js",
+    "ws": "tsc && node dist/api/websocket.js",
+    "format": "prettier --write . '!node_module/**/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SusieHartmann/velitdignissimos.git"
+  },
+  "keywords": [
+    "qui",
+    "web3",
+    "natus",
+    "exercitationem"
+  ],
+  "author": "AlanBogisich",
+  "license": "MIT",
+  "dependencies": {
+    "@noble/hashes": "^1.3.2",
+    "@noble/secp256k1": "^2.0.0",
+    "@types/node": "^20.8.10",
+    "dotenv": "^16.3.1",
+    "nostr-tools": "^1.17.0",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {}
+}
